@@ -11,7 +11,8 @@ let s:source = {
       \ 'rank' : 9,
       \ 'hooks': {},
       \ 'min_pattern_length' :
-      \    g:neocomplete#auto_completion_start_length
+      \    g:neocomplete#auto_completion_start_length,
+      \ 'matchers': ['matcher_head']
       \}
 
 function! s:source.hooks.on_init(context) "{{{
